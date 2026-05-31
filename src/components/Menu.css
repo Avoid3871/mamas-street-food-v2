@@ -1,0 +1,172 @@
+/* ============================================
+   MENU v2 — Red/Pink Brand Colors
+   ============================================ */
+.menu {
+  position: relative;
+  overflow: hidden;
+}
+
+.menu__header {
+  margin-bottom: var(--space-2xl);
+}
+
+/* Category Tabs */
+.menu__tabs-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: var(--space-2xl);
+  scrollbar-width: none;
+}
+
+.menu__tabs-wrapper::-webkit-scrollbar { display: none; }
+
+.menu__tabs {
+  display: flex;
+  gap: var(--space-xs);
+  padding: var(--space-xs);
+  background: var(--color-surface);
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+  width: fit-content;
+}
+
+.menu__tab {
+  position: relative;
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  color: var(--color-text-secondary);
+  padding: 10px 22px;
+  border-radius: var(--radius-full);
+  transition: color var(--transition-fast);
+  white-space: nowrap;
+}
+
+.menu__tab:hover { color: var(--color-text); }
+.menu__tab--active { color: var(--color-text); }
+
+.menu__tab-bg {
+  position: absolute;
+  inset: 0;
+  background: var(--color-primary-soft);
+  border: 1px solid rgba(232, 60, 66, 0.15);
+  border-radius: var(--radius-full);
+  z-index: -1;
+}
+
+/* Menu Items */
+.menu__items {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.menu__items-subtitle {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-md);
+  font-style: italic;
+}
+
+.menu-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  transition: background var(--transition-fast);
+}
+
+.menu-item:hover { background: var(--color-surface); }
+
+.menu-item__info {
+  flex: 1;
+  min-width: 0;
+}
+
+.menu-item__name-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xs);
+  flex-wrap: wrap;
+}
+
+.menu-item__name {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: var(--weight-semibold);
+  color: var(--color-text);
+}
+
+.menu-item__tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: var(--weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 2px 10px;
+  border-radius: var(--radius-full);
+  border: 1px solid;
+}
+
+.menu-item__desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-normal);
+}
+
+.menu-item__dots {
+  flex: 1;
+  min-width: 40px;
+  border-bottom: 1px dotted var(--color-border);
+  margin-bottom: 6px;
+  align-self: flex-end;
+}
+
+.menu-item__price {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: var(--weight-bold);
+  color: var(--color-primary);
+  white-space: nowrap;
+  align-self: flex-start;
+  padding-top: 2px;
+}
+
+/* Disclaimer */
+.menu__disclaimer {
+  margin-top: var(--space-2xl);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  text-align: center;
+  line-height: var(--leading-normal);
+}
+
+.menu__glow {
+  top: 20%;
+  right: -15%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu__tabs { gap: 2px; }
+
+  .menu__tab {
+    padding: 8px 14px;
+    font-size: var(--text-xs);
+  }
+
+  .menu-item {
+    flex-wrap: wrap;
+    padding: var(--space-md);
+  }
+
+  .menu-item__dots { display: none; }
+
+  .menu-item__price {
+    width: 100%;
+    text-align: right;
+    margin-top: var(--space-xs);
+  }
+}

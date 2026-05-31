@@ -1,0 +1,106 @@
+/* ============================================
+   EVENTS v2 — Red/Pink brand palette
+   ============================================ */
+.events {
+  position: relative;
+  overflow: hidden;
+}
+
+.events__content {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: var(--space-4xl);
+  align-items: center;
+}
+
+.events__text {
+  max-width: 500px;
+}
+
+.events__description {
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-normal);
+  margin-bottom: var(--space-lg);
+}
+
+.events__cta {
+  margin-top: var(--space-xl);
+}
+
+.events__cta .btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Event Cards */
+.events__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+.events__card {
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.events__card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-border-hover);
+}
+
+.events__card-icon {
+  font-size: 2rem;
+  margin-bottom: var(--space-md);
+  display: block;
+}
+
+.events__card-title {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: var(--weight-semibold);
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+}
+
+.events__card-desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-normal);
+}
+
+.events__card-badge {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+  border: 1px solid rgba(232, 60, 66, 0.15);
+}
+
+.events__glow {
+  bottom: 0;
+  left: -10%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .events__content {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .events__grid {
+    grid-template-columns: 1fr;
+  }
+}
