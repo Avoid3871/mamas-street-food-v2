@@ -174,3 +174,12 @@
     display: flex;
   }
 }
+
+@media (max-width: 768px) {
+  .navbar__inner {
+    height: 90px;
+  }
+  .navbar__logo-img {
+    height: 70px;
+  }
+}

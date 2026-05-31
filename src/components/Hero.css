@@ -172,11 +172,11 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .hero {
     min-height: 60vh;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
   }
   
   .hero__headline {
