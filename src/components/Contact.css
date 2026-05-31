@@ -121,3 +121,15 @@
     gap: var(--space-md);
   }
 }
+
+@media (max-width: 480px) {
+  .contact__giftcard {
+    padding: var(--space-md);
+  }
+  .contact__giftcard-icon {
+    font-size: 60px;
+  }
+  .contact__giftcard-content h3 {
+    font-size: var(--text-3xl);
+  }
+}

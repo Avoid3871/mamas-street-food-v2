@@ -85,6 +85,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .events__card {
+    padding: var(--space-sm);
+  }
+}
+
 /* Floating SVG Icons */
 .events__floating-icons {
   position: absolute;
@@ -138,5 +144,11 @@
   .events__icon--2 { display: none; }
   .events__icon--3 { width: 70px; height: 70px; top: 10%; right: 0%; }
   .events__icon--4 { width: 80px; height: 80px; bottom: 5%; right: 0%; }
+}
+
+@media (max-width: 480px) {
+  .events__icon {
+    display: none;
+  }
 }
 

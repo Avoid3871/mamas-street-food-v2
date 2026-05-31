@@ -63,4 +63,7 @@
   .food-concept__bento {
     grid-template-columns: 1fr;
   }
+  .food-concept__item {
+    aspect-ratio: 1/1;
+  }
 }

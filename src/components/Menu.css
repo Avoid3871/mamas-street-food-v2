@@ -155,3 +155,13 @@
     white-space: nowrap;
   }
 }
+
+@media (max-width: 480px) {
+  .menu__tab {
+    padding: 8px 16px;
+    font-size: var(--text-sm);
+  }
+  .menu-item__price {
+    font-size: var(--text-lg);
+  }
+}

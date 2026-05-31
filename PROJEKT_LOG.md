@@ -13,6 +13,15 @@
 
 ## Änderungslog
 
+### 31.05.2026 – Mobile UI/UX Optimierungen
+- **Global:** Feinabstimmung diverser CSS-Dateien (`Hero`, `About`, `FoodConcept`, `Menu`, `Events`, `Contact`, `Footer`), um das Erlebnis auf Smartphones (< 480px) flüssiger zu machen.
+- **Hero & Events:** Schwebende Hintergrund-SVGs werden auf Mobile nun komplett ausgeblendet, um den Fokus auf den Text zu lenken und Überlagerungen zu vermeiden.
+- **Größenanpassungen:** Bilder (z.B. im Bento-Grid und der About-Section) haben nun bessere Mobile-Seitenverhältnisse (1:1 bzw. feste kleinere Höhen). Das massive Footer-Logo wurde für Handys auf 80px Höhe herunterskaliert. Paddings bei Bannern und Karten wurden reduziert.
+
+### 31.05.2026 – Finalisierung & GitHub
+- **Deployment & Dokumentation:** Eine ausführliche, detaillierte `README.md` geschrieben, die das Konzept, den Tech-Stack und Installationsanweisungen beinhaltet.
+- **Versionskontrolle:** Das gesamte Projekt wurde erfolgreich auf GitHub unter dem Repository `mamas-street-food-v2` hochgeladen.
+
 ### 31.05.2026 – Animationen & Detail-Verbesserungen
 - **Events-Sektion:** Emojis entfernt für einen professionelleren Look. 4 neue handgezeichnete, schwebende SVGs (Yoga, Musik, Hantel, Party) passend zum Hero-Style integriert.
 - **Hero-Sektion:** Layout der schwebenden SVGs optimiert und vier weitere Haupt-SVGs (Bowl, Dessert, Party, Yoga) hinzugefügt. Zusätzlich wurden 5 kleinere, leicht transparente Füller-SVGs (Musik, Specials etc.) verstreut eingefügt, um den Hintergrund noch voller und lebendiger wirken zu lassen (insgesamt 12 SVGs).
