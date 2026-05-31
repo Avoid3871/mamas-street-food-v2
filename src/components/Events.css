@@ -148,7 +148,7 @@
 
 @media (max-width: 480px) {
   .events__icon {
-    display: none;
+    display: none !important;
   }
 }
 

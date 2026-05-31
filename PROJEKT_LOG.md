@@ -13,6 +13,11 @@
 
 ## Änderungslog
 
+### 31.05.2026 – Mobile UX Hotfixes
+- **Navbar/Mobile Menu:** Fehlenden `z-index` für das Sticky-Menü in der `index.css` deklariert, damit das Mobile-Menü wieder einen sauberen Hintergrund hat und die Schrift nicht überlappt. Zudem den Desktop-Button auf Mobile via CSS-Spezifität (`!important`) hart ausgeblendet.
+- **Hero & Events:** Spezifitätsproblem der schwebenden SVGs gelöst (`display: none !important`), da diese sich sonst über den Text gelegt hätten.
+- **Menu:** Punktelinien bei Preisen auf dem Smartphone ausgeblendet, da diese bei Zeilenumbrüchen zu Glitches führten. Custom Scrollbar für die horizontalen Menü-Tabs integriert.
+
 ### 31.05.2026 – Mobile UI/UX Optimierungen
 - **Global:** Feinabstimmung diverser CSS-Dateien (`Hero`, `About`, `FoodConcept`, `Menu`, `Events`, `Contact`, `Footer`), um das Erlebnis auf Smartphones (< 480px) flüssiger zu machen.
 - **Hero & Events:** Schwebende Hintergrund-SVGs werden auf Mobile nun komplett ausgeblendet, um den Fokus auf den Text zu lenken und Überlagerungen zu vermeiden.

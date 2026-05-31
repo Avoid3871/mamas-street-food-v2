@@ -176,6 +176,7 @@
   .hero {
     min-height: 60vh;
     padding-top: 40px;
+    padding-bottom: 40px;
   }
   
   .hero__headline {
@@ -183,6 +184,6 @@
   }
 
   .hero__icon {
-    display: none;
+    display: none !important;
   }
 }

@@ -62,6 +62,15 @@
   color: var(--color-illust);
 }
 
+/* Scrollbar for sidebar */
+.menu__sidebar::-webkit-scrollbar {
+  height: 4px;
+}
+.menu__sidebar::-webkit-scrollbar-thumb {
+  background: var(--color-bg-dark);
+  border-radius: 4px;
+}
+
 /* Content */
 .menu__content {
   flex: 1;
@@ -153,6 +162,12 @@
     flex: 0 0 auto;
     padding: 12px 20px;
     white-space: nowrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-item__dots {
+    display: none;
   }
 }
 
