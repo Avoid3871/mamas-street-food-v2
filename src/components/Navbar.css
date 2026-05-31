@@ -177,9 +177,9 @@
 
 @media (max-width: 768px) {
   .navbar__inner {
-    height: 90px;
+    height: 110px;
   }
   .navbar__logo-img {
-    height: 70px;
+    height: 90px;
   }
 }

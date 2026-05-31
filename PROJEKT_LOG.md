@@ -13,6 +13,9 @@
 
 ## Änderungslog
 
+### 31.05.2026 – Mobile Logo Anpassung
+- **Navbar:** Das Logo oben links in der mobilen Ansicht wurde nochmals massiv vergrößert (auf 90px Höhe). Dafür wurde auch die Navigationsleiste auf Mobile entsprechend höher gemacht, damit alles genug Freiraum zum Atmen hat.
+
 ### 31.05.2026 – Mobile UX Hotfixes
 - **Navbar/Mobile Menu:** Fehlenden `z-index` für das Sticky-Menü in der `index.css` deklariert, damit das Mobile-Menü wieder einen sauberen Hintergrund hat und die Schrift nicht überlappt. Zudem den Desktop-Button auf Mobile via CSS-Spezifität (`!important`) hart ausgeblendet.
 - **Hero & Events:** Spezifitätsproblem der schwebenden SVGs gelöst (`display: none !important`), da diese sich sonst über den Text gelegt hätten.
