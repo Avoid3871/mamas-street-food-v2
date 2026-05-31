@@ -13,6 +13,17 @@
 
 ## Änderungslog
 
+### 31.05.2026 – UI/UX Redesign (rumbekeplatse.be Style)
+- **Neues Design-Konzept:** Replikation der UI/UX-Richtlinien von rumbekeplatse.be mit Fokus auf warme, moderne und einladende Ästhetik.
+- **Farbpalette:** Dunkelrot (#67242B), Leuchtendes Rot (#FC3845), Senfgelb (#EED03A) für Illustrationen, Weiß und Dunkelgrau.
+- **Typografie:** Umstellung auf Google Fonts `Instrument Serif` (Überschriften) und `Archivo` (Fließtext) für starke Kontraste.
+- **Header & Navbar:** Implementierung eines roten Ticker-Banners für Ankündigungen oberhalb der sticky Navbar.
+- **Hero-Bereich:** Großflächiger Bereich mit animierten, schwebenden SVG-Illustrationen (Burger, Pommes, Drink) im handgezeichneten Stil.
+- **Layout:** Abwechselnde Hintergrundfarben (Dark Red und White) für verschiedene Sektionen, stark abgerundete Bilder (`border-radius`), "Pill-shaped" Buttons mit Hover-Effekten.
+- **Menü:** Tabellarisches Menü-Layout mit Icons für jede Kategorie.
+- **Kontakt/Footer:** Integration einer Cadeaubon/Geschenkkarten-Sektion in leuchtendem Rot. Dark Theme für Footer und Kontakt-Bereich.
+- **Git Repo:** Neues Git-Repository initialisiert.
+
 ### 31.05.2026 – Komplettes Website Redesign (v2)
 - **Neues Design-Konzept:** Komplett überarbeitete Farbpalette basierend auf dem echten Logo:
   - Primary: #E83C42 (Logo-Rot)

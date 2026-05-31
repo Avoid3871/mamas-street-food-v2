@@ -22,7 +22,7 @@ export default function Footer({ onOpenImpressum, onOpenDatenschutz }) {
           </div>
 
           <div className="footer__col">
-            <h4 className="footer__col-title">Navigation</h4>
+            <h4 className="footer__col-title font-display">Navigation</h4>
             <ul className="footer__links">
               <li><button onClick={() => scrollTo('hero')}>Start</button></li>
               <li><button onClick={() => scrollTo('about')}>Über Uns</button></li>
@@ -33,7 +33,7 @@ export default function Footer({ onOpenImpressum, onOpenDatenschutz }) {
           </div>
 
           <div className="footer__col">
-            <h4 className="footer__col-title">Kontakt</h4>
+            <h4 className="footer__col-title font-display">Kontakt</h4>
             <ul className="footer__links">
               <li><a href="tel:096163450123">0961 63450123</a></li>
               <li><a href="https://www.instagram.com/mamas.streetfood.bar/" target="_blank" rel="noopener noreferrer">@mamas.streetfood.bar</a></li>
@@ -43,7 +43,7 @@ export default function Footer({ onOpenImpressum, onOpenDatenschutz }) {
           </div>
 
           <div className="footer__col">
-            <h4 className="footer__col-title">Öffnungszeiten</h4>
+            <h4 className="footer__col-title font-display">Öffnungszeiten</h4>
             <ul className="footer__links footer__links--hours">
               <li className="footer__closed"><span>Montag</span><span>Ruhetag</span></li>
               <li><span>Di – Do</span><span>11 – 22 Uhr</span></li>

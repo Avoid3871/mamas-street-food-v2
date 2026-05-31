@@ -3,8 +3,7 @@ import './Contact.css'
 
 export default function Contact() {
   return (
-    <section id="contact" className="contact section">
-      <div className="ambient-glow ambient-glow--terracotta contact__glow" />
+    <section id="contact" className="contact section section--dark">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -12,8 +11,7 @@ export default function Contact() {
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.6 }}
         >
-          <span className="section__label">Kontakt</span>
-          <h2 className="section__title">Wir freuen uns auf dich.</h2>
+          <h2 className="font-display contact__title">Wir freuen uns auf dich.</h2>
         </motion.div>
 
         <div className="contact__grid">
@@ -26,10 +24,10 @@ export default function Contact() {
             transition={{ delay: 0.2, duration: 0.5 }}
           >
             {/* Address */}
-            <div className="contact__info-card glass">
+            <div className="contact__info-card">
               <div className="contact__info-icon">📍</div>
               <div className="contact__info-content">
-                <h4>Adresse</h4>
+                <h4 className="font-display">Adresse</h4>
                 <p>
                   Mama's Streetfood Bar<br />
                   Unterer Markt 19<br />
@@ -39,10 +37,10 @@ export default function Contact() {
             </div>
 
             {/* Phone */}
-            <div className="contact__info-card glass">
+            <div className="contact__info-card">
               <div className="contact__info-icon">📞</div>
               <div className="contact__info-content">
-                <h4>Telefon</h4>
+                <h4 className="font-display">Telefon</h4>
                 <p>
                   <a href="tel:096163450123">0961 63450123</a>
                 </p>
@@ -50,10 +48,10 @@ export default function Contact() {
             </div>
 
             {/* Instagram */}
-            <div className="contact__info-card glass">
+            <div className="contact__info-card">
               <div className="contact__info-icon">📱</div>
               <div className="contact__info-content">
-                <h4>Instagram</h4>
+                <h4 className="font-display">Instagram</h4>
                 <p>
                   <a href="https://www.instagram.com/mamas.streetfood.bar/" target="_blank" rel="noopener noreferrer">
                     @mamas.streetfood.bar
@@ -63,10 +61,10 @@ export default function Contact() {
             </div>
 
             {/* Hours */}
-            <div className="contact__info-card glass">
+            <div className="contact__info-card">
               <div className="contact__info-icon">🕒</div>
               <div className="contact__info-content">
-                <h4>Öffnungszeiten</h4>
+                <h4 className="font-display">Öffnungszeiten</h4>
                 <div className="contact__hours">
                   <div className="contact__hours-row contact__hours-row--closed">
                     <span className="contact__hours-day">Montag</span>
@@ -95,7 +93,7 @@ export default function Contact() {
 
           {/* Map */}
           <motion.div
-            className="contact__map"
+            className="contact__map rounded-image"
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: '-100px' }}
@@ -110,6 +108,21 @@ export default function Contact() {
             />
           </motion.div>
         </div>
+        
+        {/* Cadeaubon / Gift Card Section */}
+        <motion.div
+           className="contact__giftcard"
+           initial={{ opacity: 0, y: 30 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           viewport={{ once: true }}
+           transition={{ delay: 0.5, duration: 0.5 }}
+        >
+          <div className="contact__giftcard-content">
+            <h3 className="font-display">Mach jemandem eine Freude!</h3>
+            <p>Ein Gutschein für Mama's Streetfood Bar ist das perfekte Geschenk. Bei uns vor Ort erhältlich.</p>
+          </div>
+          <div className="contact__giftcard-icon">🎁</div>
+        </motion.div>
       </div>
     </section>
   )

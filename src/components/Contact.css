@@ -1,128 +1,123 @@
-/* ============================================
-   CONTACT v2 — Red/Pink brand
-   ============================================ */
-.contact {
-  position: relative;
-  overflow: hidden;
+.contact__title {
+  font-size: var(--text-5xl);
+  color: var(--color-text-light);
+  margin-bottom: var(--space-xl);
+  text-align: center;
 }
 
 .contact__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space-3xl);
+  gap: var(--space-2xl);
 }
 
-/* Info Side */
 .contact__info {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-xl);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
 }
 
 .contact__info-card {
-  display: flex;
-  align-items: flex-start;
-  gap: var(--space-lg);
-  padding: var(--space-xl);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: var(--space-md);
   border-radius: var(--radius-lg);
-  transition: all var(--transition-base);
-}
-
-.contact__info-card:hover {
-  border-color: var(--color-border-hover);
 }
 
 .contact__info-icon {
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--color-primary-soft);
-  border-radius: var(--radius-md);
-  flex-shrink: 0;
-  font-size: 1.3rem;
+  font-size: var(--text-3xl);
+  margin-bottom: var(--space-sm);
 }
 
 .contact__info-content h4 {
-  font-family: var(--font-display);
-  font-size: var(--text-base);
-  font-weight: var(--weight-semibold);
-  color: var(--color-text);
+  font-size: var(--text-2xl);
+  color: var(--color-illust);
   margin-bottom: var(--space-xs);
 }
 
 .contact__info-content p,
 .contact__info-content a {
   font-size: var(--text-sm);
-  color: var(--color-text-secondary);
-  line-height: var(--leading-normal);
+  color: rgba(255, 255, 255, 0.9);
+  transition: color var(--transition-fast);
 }
 
 .contact__info-content a:hover {
-  color: var(--color-primary);
+  color: var(--color-accent);
 }
 
-/* Map Side */
+.contact__hours-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact__hours-row:last-child {
+  border-bottom: none;
+}
+
+.contact__hours-day {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.contact__hours-time {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .contact__map {
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  border: 1px solid var(--color-border);
+  width: 100%;
+  height: 100%;
   min-height: 400px;
 }
 
 .contact__map iframe {
   width: 100%;
   height: 100%;
-  min-height: 400px;
-  border: none;
-  filter: brightness(0.85) contrast(1.1) saturate(0);
-  transition: filter var(--transition-base);
+  border: 0;
 }
 
-.contact__map:hover iframe {
-  filter: brightness(0.9) contrast(1.05) saturate(0.5);
-}
-
-/* Hours Table */
-.contact__hours {
-  margin-top: var(--space-xs);
-}
-
-.contact__hours-row {
+/* Gift Card Section */
+.contact__giftcard {
+  margin-top: var(--space-2xl);
+  background: var(--color-accent);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 6px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  color: var(--color-text-light);
 }
 
-.contact__hours-row:last-child { border-bottom: none; }
-
-.contact__hours-day {
-  font-size: var(--text-sm);
-  color: var(--color-text);
-  font-weight: var(--weight-medium);
+.contact__giftcard-content h3 {
+  font-size: var(--text-4xl);
+  margin-bottom: var(--space-xs);
 }
 
-.contact__hours-time {
-  font-size: var(--text-sm);
-  color: var(--color-text-secondary);
+.contact__giftcard-content p {
+  font-size: var(--text-lg);
+  opacity: 0.9;
 }
 
-.contact__hours-row--closed .contact__hours-day,
-.contact__hours-row--closed .contact__hours-time {
-  color: var(--color-text-muted);
+.contact__giftcard-icon {
+  font-size: 80px;
 }
 
-.contact__glow {
-  top: 30%;
-  right: -10%;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .contact__grid { grid-template-columns: 1fr; }
-
-  .contact__map { min-height: 300px; }
-  .contact__map iframe { min-height: 300px; }
+@media (max-width: 900px) {
+  .contact__grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact__info {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact__giftcard {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-md);
+  }
 }

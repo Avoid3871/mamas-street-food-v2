@@ -4,8 +4,7 @@ import oldRestaurant from '../assets/old-restaurant.jpg'
 
 export default function About() {
   return (
-    <section id="about" className="about section">
-      <div className="ambient-glow ambient-glow--pink about__glow" />
+    <section id="about" className="about section section--dark">
       <div className="container">
         <div className="about__content">
           {/* Photo Side */}
@@ -16,20 +15,9 @@ export default function About() {
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.7 }}
           >
-            <div className="about__image-wrapper">
+            <div className="about__image-wrapper rounded-image">
               <img src={oldRestaurant} alt="Mama's Fresh Streetfood Company — der Anfang" />
-              <div className="about__image-overlay" />
             </div>
-            <motion.div
-              className="about__float-card glass"
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.3, duration: 0.5, type: 'spring' }}
-            >
-              <span className="about__float-year">2024</span>
-              <span className="about__float-label">Neues Kapitel</span>
-            </motion.div>
           </motion.div>
 
           {/* Text Side */}
@@ -40,8 +28,7 @@ export default function About() {
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.7, delay: 0.1 }}
           >
-            <span className="section__label">Unsere Geschichte</span>
-            <h2 className="section__title">Von der Bude zum Wohnzimmer.</h2>
+            <h2 className="font-display about__title">Von der Bude zum Wohnzimmer.</h2>
 
             <p className="about__desc">
               Angefangen als kleiner Imbiss — die "Mama's Fresh Streetfood Company" in der 
@@ -55,26 +42,11 @@ export default function About() {
               Zusammensein — inklusive Events wie Yoga-Brunch, Rap-Frühschoppen und Pop-ups.
             </p>
 
-            <div className="about__quote glass--pink">
-              <p className="about__quote-text">
+            <div className="about__quote">
+              <p className="about__quote-text font-display italic">
                 „Alles kann, nichts muss. Ein Ort, an dem man sich wohlfühlt — wie bei Mama eben."
               </p>
               <span className="about__quote-author">— Kati Hartwich, Gründerin</span>
-            </div>
-
-            <div className="about__stats">
-              <div>
-                <span className="about__stat-value">♥</span>
-                <p className="about__stat-label">Gemacht mit Liebe</p>
-              </div>
-              <div>
-                <span className="about__stat-value">100%</span>
-                <p className="about__stat-label">Frisch zubereitet</p>
-              </div>
-              <div>
-                <span className="about__stat-value">∞</span>
-                <p className="about__stat-label">Community Events</p>
-              </div>
             </div>
           </motion.div>
         </div>
