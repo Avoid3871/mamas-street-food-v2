@@ -25,7 +25,6 @@ export default function Contact() {
           >
             {/* Address */}
             <div className="contact__info-card">
-              <div className="contact__info-icon">📍</div>
               <div className="contact__info-content">
                 <h4 className="font-display">Adresse</h4>
                 <p>
@@ -38,7 +37,6 @@ export default function Contact() {
 
             {/* Phone */}
             <div className="contact__info-card">
-              <div className="contact__info-icon">📞</div>
               <div className="contact__info-content">
                 <h4 className="font-display">Telefon</h4>
                 <p>
@@ -47,14 +45,17 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Instagram */}
+            {/* Social Media */}
             <div className="contact__info-card">
-              <div className="contact__info-icon">📱</div>
               <div className="contact__info-content">
-                <h4 className="font-display">Instagram</h4>
+                <h4 className="font-display">Social Media</h4>
                 <p>
                   <a href="https://www.instagram.com/mamas.streetfood.bar/" target="_blank" rel="noopener noreferrer">
-                    @mamas.streetfood.bar
+                    Instagram
+                  </a>
+                  <br />
+                  <a href="https://www.facebook.com/mamas.weiden/" target="_blank" rel="noopener noreferrer">
+                    Facebook
                   </a>
                 </p>
               </div>
@@ -62,7 +63,6 @@ export default function Contact() {
 
             {/* Hours */}
             <div className="contact__info-card">
-              <div className="contact__info-icon">🕒</div>
               <div className="contact__info-content">
                 <h4 className="font-display">Öffnungszeiten</h4>
                 <div className="contact__hours">
@@ -121,7 +121,6 @@ export default function Contact() {
             <h3 className="font-display">Mach jemandem eine Freude!</h3>
             <p>Ein Gutschein für Mama's Streetfood Bar ist das perfekte Geschenk. Bei uns vor Ort erhältlich.</p>
           </div>
-          <div className="contact__giftcard-icon">🎁</div>
         </motion.div>
       </div>
     </section>

@@ -36,7 +36,8 @@ export default function Footer({ onOpenImpressum, onOpenDatenschutz }) {
             <h4 className="footer__col-title font-display">Kontakt</h4>
             <ul className="footer__links">
               <li><a href="tel:096163450123">0961 63450123</a></li>
-              <li><a href="https://www.instagram.com/mamas.streetfood.bar/" target="_blank" rel="noopener noreferrer">@mamas.streetfood.bar</a></li>
+              <li><a href="https://www.instagram.com/mamas.streetfood.bar/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              <li><a href="https://www.facebook.com/mamas.weiden/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
               <li><span>Unterer Markt 19</span></li>
               <li><span>92637 Weiden i.d. OPf.</span></li>
             </ul>

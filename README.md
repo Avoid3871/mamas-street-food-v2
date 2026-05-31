@@ -1,16 +1,57 @@
-# React + Vite
+# Mama's Streetfood Bar v2 🍔🍟🥤
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Herzlich willkommen im Repository für **Mama's Streetfood Bar**! Dies ist die komplett überarbeitete und moderne Version (v2) der Restaurant-Website, die Streetfood, Community und Liebe vereint. 
 
-Currently, two official plugins are available:
+## 🌟 Projekt-Konzept
+Mama's Streetfood Bar ist mehr als nur ein Imbiss in Weiden in der Oberpfalz. Es ist ein offenes "Wohnzimmer", in dem sich Menschen treffen, um internationale Streetfood-Küche zu genießen und an kreativen Events wie dem *Yoga-Brunch* oder *Rap-Frühschoppen* teilzunehmen. Das Design spiegelt diesen Vibe wider: Warm, stylisch, modern und community-zentriert.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🎨 UI/UX Design & Animationen
+Die Website nutzt ein hochwertiges, handgezeichnetes und puristisches Design mit starken roten Akzenten.
+- **Cinematic Hero-Sektion**: Umrandet von animierten, handgezeichneten SVGs (Burger, Bowl, Party etc.) mit butterweichen Fade-Ins.
+- **Flüssige Laufband-Menüs**: Integrierte `FlowingMenu`-Komponenten für dynamische Bilddurchläufe.
+- **Smooth Scrolling & Blurs**: Einsatz von `GradualBlur` und Framer Motion für hochwertige Übergänge.
+- **Responsiv**: Komplett Mobile-First entwickelt.
 
-## React Compiler
+## 🛠 Tech-Stack
+Dieses Projekt nutzt modernste Frontend-Technologien:
+- **React 19** & **Vite** (Schnelles, modernes Frontend)
+- **Framer Motion** & **GSAP** (Für aufwendige, cineastische Animationen)
+- **CSS Modules / Vanilla CSS** (Für ein maßgeschneidertes Styling ohne Bloatware)
+- **Upstash Redis** (Als leichtgewichtiges Backend/CMS für das Admin-Panel)
+- **Vercel** (Für blitzschnelles Hosting und Serverless Functions)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🔑 Das Admin-Panel (`/admin`)
+Das Projekt verfügt über ein kennwortgeschütztes Admin-Panel (gebaut mit Vite & React Router), worüber die Speisekarte dynamisch verwaltet werden kann.
+- Speisen, Preise und Kategorien in Echtzeit hinzufügen, bearbeiten und löschen.
+- Die Daten werden persistent und pfeilschnell über eine **Upstash Redis Datenbank** synchronisiert.
+- Komplett nahtlos ins Vercel Hosting integriert.
 
-## Expanding the ESLint configuration
+## 🚀 Lokale Installation
+1. Repository klonen:
+   ```bash
+   git clone https://github.com/DEIN_USERNAME/mamas-street-food-v2.git
+   ```
+2. In das Verzeichnis wechseln:
+   ```bash
+   cd mamas-street-food-v2
+   ```
+3. Abhängigkeiten installieren:
+   ```bash
+   npm install
+   ```
+4. Umgebungsvariablen (`.env`) anlegen (Upstash Credentials eintragen):
+   ```env
+   VITE_UPSTASH_REDIS_REST_URL=your_url
+   VITE_UPSTASH_REDIS_REST_TOKEN=your_token
+   VITE_ADMIN_PASSWORD=your_password
+   ```
+5. Entwicklungsserver starten:
+   ```bash
+   npm run dev
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🌐 Deployment
+Die Seite ist vollständig für das Vercel-Hosting optimiert, inklusive konfiguriertem `vercel.json` für korrekte SPA-Routing-Regeln (Client-Side Routing).
+
+---
+*Gebaut mit ❤️ für Weiden i.d. OPf.*

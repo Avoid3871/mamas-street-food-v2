@@ -13,6 +13,14 @@
 
 ## Änderungslog
 
+### 31.05.2026 – Animationen & Detail-Verbesserungen
+- **Events-Sektion:** Emojis entfernt für einen professionelleren Look. 4 neue handgezeichnete, schwebende SVGs (Yoga, Musik, Hantel, Party) passend zum Hero-Style integriert.
+- **Hero-Sektion:** Layout der schwebenden SVGs optimiert und vier weitere Haupt-SVGs (Bowl, Dessert, Party, Yoga) hinzugefügt. Zusätzlich wurden 5 kleinere, leicht transparente Füller-SVGs (Musik, Specials etc.) verstreut eingefügt, um den Hintergrund noch voller und lebendiger wirken zu lassen (insgesamt 12 SVGs).
+- **Kontakt-Sektion:** Sämtliche Emojis (Geschenk, Ort, Telefon, Instagram, Uhr) aus dem gesamten Kontakt-Bereich entfernt, um den erwachseneren, puristischen Look konsequent durchzuziehen. Zusätzlich wurde "Instagram" in "Social Media" umbenannt und der Facebook-Link hinzugefügt (sowohl auf der Kontakt-Karte als auch im Footer).
+- **Footer-Sektion:** Das Logo wurde nochmals deutlich vergrößert (140px Höhe) für maximale Präsenz und das Raster-Layout (Grid) der Spalten so angepasst, dass die Öffnungszeiten nun ausreichend Platz haben und Zeilenumbrüche bei Wörtern wie "Uhr" oder "Do" vermieden werden.
+- **React Bits Integration:** Hinzugefügt und auf Kundenwunsch wieder rückgängig gemacht, um das Design puristisch zu halten.
+- **Abhängigkeiten:** `gsap` und `mathjs` installiert und wieder zur Entfernung freigegeben.
+
 ### 31.05.2026 – UI/UX Redesign (rumbekeplatse.be Style)
 - **Neues Design-Konzept:** Replikation der UI/UX-Richtlinien von rumbekeplatse.be mit Fokus auf warme, moderne und einladende Ästhetik.
 - **Farbpalette:** Dunkelrot (#67242B), Leuchtendes Rot (#FC3845), Senfgelb (#EED03A) für Illustrationen, Weiß und Dunkelgrau.

@@ -1,6 +1,10 @@
 import { motion } from 'framer-motion'
 import './Hero.css'
-import { HandDrawnBurger, HandDrawnFries, HandDrawnDrink } from './Icons'
+import { 
+  HandDrawnBurger, HandDrawnFries, HandDrawnDrink,
+  HandDrawnBowl, HandDrawnDessert, HandDrawnParty, HandDrawnYoga,
+  HandDrawnMusic, HandDrawnSpecials
+} from './Icons'
 
 export default function Hero() {
   const scrollTo = (id) => {
@@ -11,10 +15,20 @@ export default function Hero() {
     <section id="hero" className="hero section--light">
       <div className="container">
         <div className="hero__content">
-          {/* Floating Icons */}
           <HandDrawnBurger className="hero__icon hero__icon--1 floating-icon" />
-          <HandDrawnFries className="hero__icon hero__icon--2 floating-icon" style={{ animationDelay: '1s' }} />
-          <HandDrawnDrink className="hero__icon hero__icon--3 floating-icon" style={{ animationDelay: '2s' }} />
+          <HandDrawnFries className="hero__icon hero__icon--2 floating-icon" style={{ animationDelay: '1.5s' }} />
+          <HandDrawnDrink className="hero__icon hero__icon--3 floating-icon" style={{ animationDelay: '3s' }} />
+          <HandDrawnBowl className="hero__icon hero__icon--4 floating-icon" style={{ animationDelay: '0.8s' }} />
+          <HandDrawnDessert className="hero__icon hero__icon--5 floating-icon" style={{ animationDelay: '2.2s' }} />
+          <HandDrawnParty className="hero__icon hero__icon--6 floating-icon" style={{ animationDelay: '1.1s' }} />
+          <HandDrawnYoga className="hero__icon hero__icon--7 floating-icon" style={{ animationDelay: '2.7s' }} />
+          
+          {/* Extra Filler Icons to scatter and fill the page */}
+          <HandDrawnMusic className="hero__icon hero__icon--8 floating-icon" style={{ animationDelay: '0.3s' }} />
+          <HandDrawnSpecials className="hero__icon hero__icon--9 floating-icon" style={{ animationDelay: '1.8s' }} />
+          <HandDrawnBurger className="hero__icon hero__icon--10 floating-icon" style={{ animationDelay: '2.5s' }} />
+          <HandDrawnDrink className="hero__icon hero__icon--11 floating-icon" style={{ animationDelay: '0.6s' }} />
+          <HandDrawnFries className="hero__icon hero__icon--12 floating-icon" style={{ animationDelay: '2.9s' }} />
 
           {/* Text Content */}
           <motion.div

@@ -1,27 +1,25 @@
 import { motion } from 'framer-motion'
 import './Events.css'
+import { HandDrawnYoga, HandDrawnMusic, HandDrawnDumbbell, HandDrawnParty } from './Icons'
+
 
 const events = [
   {
-    icon: '🧘',
     title: 'Yoga-Brunch',
     desc: 'Entspannte Yoga-Session am Morgen, gefolgt von einem ausgiebigen Brunch mit Freunden.',
     badge: 'Regelmäßig'
   },
   {
-    icon: '🎤',
     title: 'Rap-Frühschoppen',
     desc: 'Beats, Bars und Brunch — unser kreatives Format für Musikliebhaber am Wochenende.',
     badge: null
   },
   {
-    icon: '💪',
     title: 'Pilates-Boost',
     desc: 'Starte fit in den Tag mit unserer Pilates-Session und tanke danach Energie bei uns.',
     badge: 'Regelmäßig'
   },
   {
-    icon: '🎉',
     title: 'Pop-up Events',
     desc: 'Überraschungsformate, besondere Aktionen und kreative Ideen — folge uns auf Insta!',
     badge: 'Neu'
@@ -32,6 +30,15 @@ export default function Events() {
   return (
     <section id="events" className="events section section--light">
       <div className="container">
+        
+        {/* Floating Icons Background */}
+        <div className="events__floating-icons">
+          <HandDrawnYoga className="events__icon events__icon--1 floating-icon" style={{ animationDelay: '0.5s' }} />
+          <HandDrawnMusic className="events__icon events__icon--2 floating-icon" style={{ animationDelay: '2s' }} />
+          <HandDrawnDumbbell className="events__icon events__icon--3 floating-icon" style={{ animationDelay: '1.2s' }} />
+          <HandDrawnParty className="events__icon events__icon--4 floating-icon" style={{ animationDelay: '2.8s' }} />
+        </div>
+
         <motion.div
           className="events__content"
           initial={{ opacity: 0 }}
@@ -77,7 +84,6 @@ export default function Events() {
                 transition={{ delay: i * 0.1, duration: 0.5 }}
               >
                 {event.badge && <span className="events__card-badge">{event.badge}</span>}
-                <span className="events__card-icon">{event.icon}</span>
                 <h3 className="events__card-title font-display">{event.title}</h3>
                 <p className="events__card-desc">{event.desc}</p>
               </motion.div>

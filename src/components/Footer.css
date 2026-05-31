@@ -7,7 +7,7 @@
 
 .footer__grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
   gap: var(--space-3xl);
   margin-bottom: var(--space-3xl);
 }
@@ -23,7 +23,7 @@
 }
 
 .footer__logo-img {
-  height: 50px;
+  height: 140px;
   width: auto;
   filter: brightness(0) invert(1);
 }
@@ -68,7 +68,11 @@
 .footer__links--hours li {
   display: flex;
   justify-content: space-between;
-  gap: var(--space-lg);
+  gap: var(--space-md);
+}
+
+.footer__links--hours span {
+  white-space: nowrap;
 }
 
 .footer__closed {
